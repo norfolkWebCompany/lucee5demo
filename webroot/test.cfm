@@ -1,9 +1,9 @@
 <p>Hello Brother</p>
 
-<cfquery name="q1" datasource="heroku_17a6a798d69ee70">
+<cfquery name="myQuery" datasource="heroku_17a6a798d69ee70">
 SELECT * FROM first
 </cfquery>
-<cfdump var="#q1#"/>
+<cfdump var="#MyQuery#"/>
 
 <cfscript>
 	dump( application );

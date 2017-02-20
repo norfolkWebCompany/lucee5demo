@@ -1,4 +1,4 @@
-<p>Hello world</p>
+<p>Hello Brother</p>
 <cfscript>
 	dump( application );
 	dump( cgi );

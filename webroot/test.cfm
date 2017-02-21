@@ -1,5 +1,5 @@
 <cfoutput>
-<p>Hello Brother #now()#</p>
+<p>Hello Viewer #now()#</p>
 </cfoutput>
 
 <cfquery name="myQuery" datasource="heroku_17a6a798d69ee70">

@@ -1,4 +1,4 @@
-<p>Hello Brother</p>
+<p>Hello Brother @ #now()#</p>
 
 <cfquery name="myQuery" datasource="heroku_17a6a798d69ee70">
 SELECT * FROM first

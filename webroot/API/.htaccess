@@ -1,2 +1,2 @@
 DirectoryIndex index.cfm
-<IfModule mod_rewrite.c>RewriteEngine OnRewriteCond %{REQUEST_FILENAME} !-fRewriteRule ^/api/(.*) /api/index.cfm/$1</IfModule>
+<IfModule mod_rewrite.c>RewriteEngine OnRewriteCond %{REQUEST_FILENAME} /api/taffy/RewriteCond %{REQUEST_FILENAME} !/api/taffy/index.cfmRewriteCond %{REQUEST_FILENAME} !/api/taffy/resourcesRewriteRule ^/taffy/(.*) /api/taffy/index.cfm?endpoint=/$1 [PT]</IfModule>

@@ -15,4 +15,11 @@
         <from>^/index.cfm$</from>
         <to>/$1</to>
     </rule>
+ <rule enabled="true">
+        <note>search engine friendly urls for cf frameworks</note>
+        <condition type="request-filename" operator="notfile" />
+        <from>^/api/index.cfm$</from>
+        <to>/api/$1</to>
+    </rule>
+
 </urlrewrite>

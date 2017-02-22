@@ -1,0 +1,8 @@
+DirectoryIndex index.cfm
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /taffy
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.cfm?endpoint=/{R:0} [L]
+</IfModule>

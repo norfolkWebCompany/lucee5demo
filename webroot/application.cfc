@@ -10,7 +10,7 @@
 		variables.framework.debugKey = "debug";
 		variables.framework.reloadKey = "reload";
 		variables.framework.reloadPassword = "true";
-		variables.framework.serializer = "taffy.core.nativeJsonSerializer";
+		variables.framework.serializer = "api.core.nativeJsonSerializer";
 		variables.framework.returnExceptionsAsJson = true;
 		variables.framework.allowCrossDomain = true;
 		variables.framework.reloadOnEveryRequest = true;

@@ -9,11 +9,10 @@
         <set type="status">404</set>
     </rule>
 
-    <rule enabled="false">
-        <note>search engine friendly urls for cf frameworks</note>
-        <condition type="request-filename" operator="notfile" />
-        <from>^(.*)$</from>
-        <to>/index.cfm$1</to>
-    </rule>
-
+ <rule enabled="true">
+        <note>search engine friendly urls for cf frameworks</note>
+        <condition type="request-filename" operator="notfile" />
+        <from>^/index.cfm$</from>
+        <to>/$1</to>
+    </rule>
 </urlrewrite>

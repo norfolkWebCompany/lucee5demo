@@ -1,4 +1,4 @@
-<cfcomponent extends="core.api">
+<cfcomponent extends="api.core.api">
 	<cfscript>
 
 		this.mappings['/taffy'] = expandPath('./api');

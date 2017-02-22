@@ -1,7 +1,7 @@
-<cfcomponent extends="api.core.api">
+<cfcomponent extends="taffy.core.api">
 	<cfscript>
 
-		this.mappings['/taffy'] = expandPath('./api');
+		this.mappings['/taffy'] = expandPath('./taffy');
 		this.mappings['/resources'] = expandPath('./resources');
 		
 		this.name = hash(getCurrentTemplatePath());
@@ -10,7 +10,7 @@
 		variables.framework.debugKey = "debug";
 		variables.framework.reloadKey = "reload";
 		variables.framework.reloadPassword = "true";
-		variables.framework.serializer = "api.core.nativeJsonSerializer";
+		variables.framework.serializer = "taffy.core.nativeJsonSerializer";
 		variables.framework.returnExceptionsAsJson = true;
 		variables.framework.allowCrossDomain = true;
 		variables.framework.reloadOnEveryRequest = true;
